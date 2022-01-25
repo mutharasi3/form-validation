@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: inline-block;
+            min-width: 125px;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+.error{
+    border: 1px solid red;
+}
+.success{
+    border: 1px solid green;
+}
+    </style>
+</head>
+<body>
+    <h1>Create Account</h1>
+    <form action="" id="create-account">
+        <div>
+            <label for="f-name">First Name</label><input type="text" name="fname" id="f-name" >
+ </div>
+ <div>
+    <label for="m-name">  Middle Name</label><input type="text" name="mname" id="m-name">
+ </div>
+ <div>
+     <label for="l-name"> Last Name</label><input type="text" name="lname" id="l-name">
+ </div>
+ <div>
+<label for="email-id"> Email Id</label><input type="text" name="emailid" id="email-id">    
+ </div>
+ <div>
+    <label for="Password">Password</label><input type="password" name="password" id="Password"> 
+ </div>
+ <div>
+    <label for="c-password">Confirm Password</label><input type="password" name="cpassword" id="c-password">
+  </div>
+ <div>
+    <label for="mobile">Mobile Number</label>
+    <select name="mobilecode" id="mobilecode">
+        <option value="+91">IND-+91</option>
+        <option value="+71">PAK-+71</option>
+        <option value="+81">AUS-+81</option>
+    </select>
+    <input type="text" id="mobileno"id="mobileno">
+</div>
+ <div>
+   <label for="" >Gender</label> 
+     <input type="radio" name="gender" id="g-male" required><label for="g-male" >Male</label>
+     <input type="radio"name="gender" id="g-female" required><label for="g-female"> Female</label> 
+ </div>
+ <div>
+   <label for="dob">Date of Birth</label><input type="date"name="dob" id="dob" placeholder="dd-mm-yyyy" required>  
+ </div>
+ <div>
+     <label for="Country">Country</label>
+     <select name="country" id="Country">
+     <option value="IND">India</option>
+     <option value="PAK">Pakisthan</option>
+     <option value="AUS">Australia</option>
+    </select>
+ </div>
+ <div>
+  <label for="bio">Bio</label><textarea type="text" name="bio" id="bio"></textarea>
+ </div>
+ <div>
+    <button type="submit">submit</button>
+ </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
